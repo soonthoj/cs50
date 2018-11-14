@@ -9,6 +9,10 @@
 
 int main(int argc, char *argv[])
 {
+
+/* Note: I tried using atoi earlier to cast argv[1] to an int, then checked in line 17, 
+but it did not return 1 for positive numbers with a decimal place like 10.1. */
+
     // ensure proper usage; check for 4 arguments total
     if (argc != 4)
     {
